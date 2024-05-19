@@ -1,14 +1,11 @@
-import React, {  useEffect} from "react";
+import React, { useEffect } from "react";
 
-
-export const PopupAdmin = ({isActive,setIsActive, children }) => {
-
-
-  const handleEscape=(e)=>{
-    if(e.keyCode=="27"){
-      setIsActive(false)
+export const PopupAdmin = ({ isActive, setIsActive, children }) => {
+  const handleEscape = (e) => {
+    if (e.keyCode == "27") {
+      setIsActive(false);
     }
-  }
+  };
   useEffect(() => {
     window.addEventListener("keydown", handleEscape, true);
     return () => {
@@ -26,7 +23,7 @@ export const PopupAdmin = ({isActive,setIsActive, children }) => {
                   ? "popup-admin__card-inner active"
                   : "popup-admin__card-inner"
               }
-            >
+       ы     >
               <button
                 onClick={() => setIsActive(false)}
                 className="close-card reg-close"
@@ -39,3 +36,4 @@ export const PopupAdmin = ({isActive,setIsActive, children }) => {
     </div>
   );
 };
+
