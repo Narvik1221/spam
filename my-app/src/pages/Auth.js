@@ -5,7 +5,6 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import { NavLink, useLocation } from "react-router-dom";
 import { LOGIN_ROUTE, REGISTRATION_ROUTE } from "../utils/consts";
-import Loader from "../components/Loader/Loader";
 const Auth = () => {
   const location = useLocation();
   const isLogin = location.pathname === LOGIN_ROUTE;
